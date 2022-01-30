@@ -112,14 +112,22 @@ header nav ul li :hover{
 
 }
 .boxes{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly; 
-    align-content: space-between;   
-    flex-basis: 60%;
-    margin: 0 auto;
-    height: 475px;
-    padding-bottom: 10px;  
+    justify-items: space-evenly;
+    flex-basis: 80%;
+    margin-right:50px;
+    margin-left:50px;
+}
+.boxes h3{
+    text-decoration: none;
+    text-align:center;
+    font-size: 30px;
+    color: var(--color4);
+    padding: 50px 100px ;
+    background-color: var(--color2);
+    border-radius:15px;
+}
+.border{
+    margin-left:40px;
 }
 footer{
     padding: 20px 35px;
@@ -139,7 +147,68 @@ footer a :hover{
     color:white;
     font-weight: lighter;
 }
+/*Media Queries*/
+@media screen and (max-width: 980px) {
+    *{
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-wrap:wrap;
+        width: 100%;
+        height:auto;
 
+    }
+    header h1 {
+    text-align: center;
+    font-size: 30px;
+    }
+    header div{
+        font-size: 15px;
+        justify-content: center;
+        align-content: center;
+    }
+    .banner{
+        max-height: 300px;
+        width:100%;
+        background-image:url(/images/family-photo\ 2.jpg);
+
+    }
+    .banner h2{
+        opacity:0;
+    }
+    .mission{
+        font-size:20px;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-top: 50px;
+        
+    }
+    .titles{
+        width:100px;
+        padding:0;
+        top:0;
+        padding-right:10px;
+    }
+    .block{
+        width:80%;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .boxes{
+        width:100%;
+
+        
+    }
+    footer{
+    text-align: center;
+    width: 100%;
+    position:static;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-direction: column;
+    }
+    
 @media screen and (max-width:768px) {
 
 
