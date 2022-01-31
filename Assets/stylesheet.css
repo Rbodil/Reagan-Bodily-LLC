@@ -57,7 +57,7 @@ header nav ul li :hover{
 }
 /* I wanted to see how cool I could make this*/
 .banner{
-    background-image: url(family-photo.jpg);
+    background-image: url(/Reagan-Bodily-LLC/images/family-photo.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -150,7 +150,7 @@ button :hover{
 }
 
 .button1 :hover{
-    background-image: url(trainer-1.jpg);
+    background-image: url(/Reagan-Bodily-LLC/images/trainer-1.jpg);
     background-position: center 20%;
     color: var(--color2);
     text-align: bottom right;
@@ -217,7 +217,7 @@ footer a :hover{
     .banner{
         max-height: 300px;
         width:100%;
-        background-image:url(family-photo\ 4.jpg);
+        background-image:url(/Reagan-Bodily-LLC/images/family-photo\ 4.jpg);
         background-position: 30% 40%;
 
     }
