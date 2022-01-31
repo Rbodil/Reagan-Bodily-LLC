@@ -1,5 +1,5 @@
 :root{
-    --color1: rgb(5, 5, 5);
+    --color1: rgb(34, 19, 7);
     --color2: rgb(20, 158, 200);
     --color3: rgb(28, 32, 1);
     --color4: rgb(11, 46, 53);
@@ -92,7 +92,7 @@ header nav ul li :hover{
 .container{
     color:var(--color2);
     display:flex;
-    justify-content: space-between;
+    justify-items: space-between;
     padding-top: 50px;
     align-items: space-evenly;
 }
@@ -120,7 +120,6 @@ header nav ul li :hover{
     height:auto;
     width:80%;
     padding: 0 50px;
-    border:2px solid yellow;
     
 }
 button h3{
@@ -135,7 +134,7 @@ button{
     text-align:center;
     color:var(--color3);
     text-decoration: none;
-    border: 3px solid green;
+    border: 3px solid var(--color2);
     border-radius:20px; 
     
 }
@@ -177,27 +176,45 @@ footer a :hover{
 @media screen and (max-width: 980px) {
     *{
         width: 100%;
+        flex-direction: column;
+        flex-shrink:75%;
+ 
     }
     header {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: nowrap;
+        justify-items: flex-start;
+        align-items:flex-start;
         width: 100%;
-        height:auto;
+        height:100px;
 
     }
     header h1 {
     text-align: center;
     font-size: 30px;
     }
-    header div{
+    header div nav{
+        height:30px;
+        width:100%;
+        flex-direction: row;
+
+    }
+    header div nav ul li{
         font-size: 15px;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding:0;
+
+    }
+    .container{
+        flex-direction: column;
+        justify-items: center;
     }
     .banner{
         max-height: 300px;
         width:100%;
-        background-image:url(/images/family-photo\ 2.jpg);
+        background-image:url(/images/family-photo\ 4.jpg);
+        background-position: 30% 40%;
 
     }
     .banner h2{
@@ -211,21 +228,33 @@ footer a :hover{
         
     }
     .titles{
-        width:100px;
+        width:75%;
         padding:0;
         top:0;
+        flex-wrap: nowrap;
+        text-align: center;
+        align-self:center;
         padding-right:10px;
+        border-right:none;
+        border-bottom:2px solid var(--color2);
+        padding-bottom:8px;
     }
     .block{
         width:80%;
         font-size: 20px;
         font-weight: lighter;
+
     }
     .boxes{
-        width:100%;
-        flex-direction: column;
-
-        
+       width:400px;
+       flex-basis:20%;
+       flex-flow: row wrap;
+       align-self:center;
+       margin-top:20px;
+       margin-bottom:50px;
+    }
+    .boxes button{
+        margin-top:10px;
     }
     footer{
     text-align: center;
