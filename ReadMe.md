@@ -5,9 +5,7 @@ https://rbodil.github.io/Reagan-Bodily-LLC/
 ## Goals of the website:
 * Showcase my skills as a developer in every way I can do so.
 
-### ✅ Checklist:
-* Add links to deployed and functioning repositories
-* Add favicon
+## ✅ Checklist:
 
 ### 🔠 HTML
 * Link to external JS 
