@@ -13,5 +13,7 @@
 * Cursor elements
 * Concise, organized classes with notes
 
+![portfolio demo](./images/Portfolio-Screengrab.gif)
+
 
 
