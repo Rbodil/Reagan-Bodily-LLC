@@ -1,5 +1,5 @@
 :root{
-    --color1: rgb(34, 19, 7);
+    --color1: rgb(24, 13, 6);
     --color2: rgb(20, 158, 200);
     --color3: rgb(28, 32, 1);
     --color4: rgb(11, 46, 53);
@@ -23,17 +23,19 @@ header{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    box-shadow: 0 -10px 20px black;
+    box-shadow: 0 -1px 20px black;
+    z-index: +1;
 }
 header a{
     color: var(--color2);
     text-decoration: none;  
 }
 /* I wanted to make the h1 element be more vertically centered in the header*/
-header h1 a{
+header h1 {
     position:relative;
     top: 10px;
-    font-size: 2vw;
+    font-size: 50px;
+    color: var(--color2);
 }
 header nav ul{
     display: flex;
@@ -88,12 +90,14 @@ header nav ul li :hover{
     justify-self: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    opacity:70%;
 }
 .container{
     color:var(--color2);
     display:flex;
     justify-items: space-between;
     padding-top: 50px;
+    padding-bottom: 20px;
     align-items: space-evenly;
 }
 .titles{
@@ -106,9 +110,9 @@ header nav ul li :hover{
     width: 700px;
     height: 350px;
     margin:0 auto;
-    padding: 40px;
     font-size: 23px;
     font-weight: lighter;
+
 
 }
 .boxes{
@@ -131,6 +135,7 @@ button h3{
     
 }
 button{
+    display: inline-block;
     text-align:center;
     color:var(--color3);
     text-decoration: none;
@@ -140,11 +145,16 @@ button{
 }
 button :hover{
     padding: 70px 100px;
+    cursor:alias;
+    transition-duration: 0.4s;
 }
 
 .button1 :hover{
     background-image: url(/images/trainer-1.jpg);
     background-position: center 20%;
+    color: var(--color2);
+    text-align: bottom right;
+
 }
 .button2 :hover{
     background-color:var(--color3);
@@ -174,37 +184,31 @@ footer a :hover{
 }
 /*Media Queries*/
 @media screen and (max-width: 980px) {
-    *{
+    body{
         width: 100%;
         flex-direction: column;
-        flex-shrink:75%;
- 
+        flex-shrink:75%; 
     }
     header {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-items: flex-start;
-        align-items:flex-start;
-        width: 100%;
-        height:100px;
-
+    padding-bottom: 0;
+    justify-content: center;
+    position:relative;
+    height:auto;
     }
     header h1 {
+    width: 100%;
     text-align: center;
     font-size: 30px;
     }
-    header div nav{
-        height:30px;
-        width:100%;
-        flex-direction: row;
-
+    header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
     }
-    header div nav ul li{
-        font-size: 15px;
-        justify-content: space-between;
-        align-content: flex-start;
-        padding:0;
-
+    header nav ul li a {
+    font-size: 20px;
     }
     .container{
         flex-direction: column;
@@ -243,7 +247,7 @@ footer a :hover{
         width:80%;
         font-size: 20px;
         font-weight: lighter;
-
+        text-align: center;
     }
     .boxes{
        width:400px;
@@ -252,9 +256,11 @@ footer a :hover{
        align-self:center;
        margin-top:20px;
        margin-bottom:50px;
+       height:auto;
     }
     .boxes button{
         margin-top:10px;
+        margin-bottom: 8px;
     }
     footer{
     text-align: center;
@@ -264,10 +270,33 @@ footer a :hover{
     align-content: space-evenly;
     flex-direction: column;
     }
+}
     
 @media screen and (max-width:768px) {
+    section{
+        padding:30px 15px;
+    }   
+    footer h3{
+        padding-top: 10px;
 
-
-
-    
+    }
+    .block{
+        flex:100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    body{
+        width:100%;
+    }
+    header nav ul li{
+        width:25%;
+        flex-direction: row;
+    }
+    header nav ul li a{
+        font-size: 10px;
+    }
+    section{
+        padding:20px
+        
+    }
 }
