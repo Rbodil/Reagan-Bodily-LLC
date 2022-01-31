@@ -112,22 +112,48 @@ header nav ul li :hover{
 
 }
 .boxes{
-    justify-items: space-evenly;
-    flex-basis: 80%;
-    margin-right:50px;
-    margin-left:50px;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-basis: 100%;
+    height:auto;
+    width:80%;
+    padding: 0 50px;
+    border:2px solid yellow;
+    
 }
-.boxes h3{
-    text-decoration: none;
-    text-align:center;
-    font-size: 30px;
-    color: var(--color4);
-    padding: 50px 100px ;
-    background-color: var(--color2);
+button h3{
+    font-size: 20px;
+    color: var(--color1); 
+    background-color: var(--color2); 
+    padding: 30px 50px ;
     border-radius:15px;
+    
+}
+button{
+    text-align:center;
+    color:var(--color3);
+    text-decoration: none;
+    border: 3px solid green;
+    border-radius:20px; 
+    
+}
+button :hover{
+    padding: 70px 100px;
+}
+
+.button1 :hover{
+    background-image: url(/images/trainer-1.jpg);
+    background-position: center 20%;
+}
+.button2 :hover{
+    background-color:var(--color3);
+    color:var(--color2);
+    padding:70px 100px;
 }
 .border{
-    margin-left:40px;
+    margin-left:22px;
 }
 footer{
     padding: 20px 35px;
@@ -197,6 +223,7 @@ footer a :hover{
     }
     .boxes{
         width:100%;
+        flex-direction: column;
 
         
     }
