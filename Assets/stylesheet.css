@@ -189,6 +189,9 @@ footer a :hover{
         width: 100%;
         flex-direction: column;
         flex-shrink:75%; 
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
     }
     header {
     padding-bottom: 0;
@@ -284,6 +287,10 @@ footer a :hover{
     .block{
         flex:100%;
     }
+    .mission{
+        font-size:20px;
+        opacity:100%;
+    }
 }
 @media screen and (max-width: 575px) {
     body{
@@ -299,5 +306,8 @@ footer a :hover{
     section{
         padding:20px
         
+    }
+    .mission{
+        font-size:15px;
     }
 }
