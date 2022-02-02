@@ -102,12 +102,12 @@ header nav ul li :hover{
 }
 .titles{
     border-right: 2px solid var(--color2);
-    padding: 150px;    
-    width: 400px;
+    padding: 10%;    
+    width: 20%;
     text-align: right;
 }
 .block{
-    width: 700px;
+    width: 60%;
     height: 350px;
     margin:0 auto;
     font-size: 23px;
@@ -121,7 +121,7 @@ header nav ul li :hover{
     justify-content: space-evenly;
     align-content: space-evenly;
     flex-basis: 100%;
-    height:auto;
+    height:400px;
     width:80%;
     padding: 0 50px;
     
