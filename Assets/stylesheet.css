@@ -159,6 +159,14 @@ button :hover{
     text-align: bottom right;
 
 }
+.buttonPG :hover{
+    background-image: url(/Reagan-Bodily-LLC/images/PGscreenshot.png);
+    background-position: center 20%;
+    color: var(--color2);
+    text-align: bottom right;
+    background-repeat: no-repeat;
+
+}
 .button2 :hover{
     background-color:var(--color3);
     color:var(--color2);
@@ -267,6 +275,12 @@ footer a :hover{
     .boxes button{
         margin-top:10px;
         margin-bottom: 8px;
+    }
+    .button1 :hover, .button2:hover, .buttonPG :hover{
+    padding: 30px, 50px;
+    transition-duration: 0s;
+    background-image: none;
+    background-color: var(--color3);
     }
     footer{
     text-align: center;
