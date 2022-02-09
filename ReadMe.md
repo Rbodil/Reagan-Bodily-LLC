@@ -1,4 +1,4 @@
-# Portfolio ReadMe
+# ReadMe
 ## Goals of the website:
 * Showcase my skills as a developer in every way I can do so.
 
