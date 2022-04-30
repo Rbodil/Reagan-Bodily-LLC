@@ -57,7 +57,7 @@ header nav ul li :hover{
 }
 /* I wanted to see how cool I could make this*/
 .banner{
-    background-image: url(/images/family-photo.jpg);
+    background-image: url(/Reagan-Bodily-LLC/images/family-photo.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,8 +121,8 @@ header nav ul li :hover{
     flex-flow:row wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
-    flex-basis:100%;
-    min-height:350px;
+    flex-basis: 100%;
+    height:400px;
     width:80%;
     
     
@@ -149,18 +149,19 @@ button :hover{
     padding: 70px 100px;
     cursor:alias;
     transition-duration: 0.4s;
+    
 }
 
 .button1 :hover{
-    background-image: url(/images/trainer-1.jpg);
+    background-image: url(/Reagan-Bodily-LLC/images/trainer-1.jpg);
     background-position: center 20%;
+    background-repeat: no-repeat;
     color: var(--color2);
     text-align: bottom right;
-    background-repeat: no-repeat;
 
 }
 .buttonPG :hover{
-    background-image: url(/images/PGscreenshot.png);
+    background-image: url(/Reagan-Bodily-LLC/images/PGscreenshot.png);
     background-position: center 20%;
     color: var(--color2);
     text-align: bottom right;
@@ -231,7 +232,7 @@ footer a :hover{
     .banner{
         max-height: 300px;
         width:100%;
-        background-image:url(/images/family-photo\ 4.jpg);
+        background-image:url(/Reagan-Bodily-LLC/images/family-photo2.jpg);
         background-position: 30% 40%;
 
     }
@@ -277,10 +278,10 @@ footer a :hover{
         margin-bottom: 8px;
     }
     .button1 :hover, .button2:hover, .buttonPG :hover{
-        padding: 30px, 50px;
-        transition-duration: 0s;
-        background-image: none;
-        background-color: var(--color3);
+    padding: 30px, 50px;
+    transition-duration: 0s;
+    background-image: none;
+    background-color: var(--color3);
     }
     footer{
     text-align: center;
@@ -293,6 +294,10 @@ footer a :hover{
 }
     
 @media screen and (max-width:768px) {
+    .banner{
+        background-image:url(/Reagan-Bodily-LLC/images/family-photo3.jpg);
+    }
+    
     section{
         padding:30px 15px;
     }   
@@ -303,10 +308,17 @@ footer a :hover{
     .block{
         flex:100%;
     }
+    .mission{
+        font-size:20px;
+        opacity:100%;
+    }
 }
 @media screen and (max-width: 575px) {
     body{
         width:100%;
+    }
+    .banner{
+        background-image:url(/Reagan-Bodily-LLC/images/family-photo4.jpg);
     }
     header nav ul li{
         width:25%;
@@ -319,16 +331,7 @@ footer a :hover{
         padding:20px
         
     }
-}
-@media screen and (max-width:390px) {
-    body{
-        flex:1 1 100%
-    }
     .mission{
-        font-size: 15px;
-        opacity:100%;
+        font-size:15px;
     }
-
-
-    
 }
